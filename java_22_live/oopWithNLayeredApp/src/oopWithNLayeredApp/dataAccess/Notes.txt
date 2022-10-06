@@ -1,0 +1,9 @@
+Burda HibernateProductDao ole JbdcProductDao bir birinin altarnatifi olan claslardir. Bunun icin inteface kullanmaliyiz
+
+entities veritabani nesnelerimizdir
+
+DAO Date Access Object. Bunun bir veritabani nesnesi oldugunu anliyoruz
+
+Ayni isimde urun ekleyememe olayina biz is kurali diyoruz. Daha teknik ifadeyle domain diyoruz..
+
+Arayuz is birimiyle is kurarar. Veritababina gidemez
