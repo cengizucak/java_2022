@@ -1,0 +1,35 @@
+package com.example.rentacar5.dataAccess.concretes;
+
+
+import com.example.rentacar5.dataAccess.abtsracts.BrandRepository;
+import com.example.rentacar5.entiries.concretes.Brand;
+import org.springframework.stereotype.Repository;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+@Repository  //bu sinif bir DataAcces nesnesidir
+public class InMemoryBrandRepository implements BrandRepository {
+
+    List<Brand> brands;
+
+    public InMemoryBrandRepository() {
+
+        brands= new ArrayList<Brand>();
+        brands.add(new Brand(1, "BMW"));
+        brands.add(new Brand(2, "FIAT"));
+        brands.add(new Brand(3, "FORD"));
+        brands.add(new Brand(4, "RENO"));
+        brands.add(new Brand(5, "PUMA"));
+        brands.add(new Brand(6, "KUGA"));
+        brands.add(new Brand(6, "FJK8"));
+
+    }
+
+
+    @Override
+    public List<Brand> getAll() {
+        return brands;
+    }
+}
